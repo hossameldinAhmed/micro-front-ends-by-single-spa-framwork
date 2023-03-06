@@ -1,0 +1,14 @@
+    {
+      "imports": {
+        "@single-spa/welcome": "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js",
+        "react": "https://cdn.jsdelivr.net/npm/react@16.13.1/umd/react.production.min.js",
+        "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@16.13.1/umd/react-dom.production.min.js",
+        "@mfe-app-root/root-config": "//localhost:9000/mfe-app-root-root-config.js",
+        "@mf-demo/home": "http://localhost:9001/main.js",
+        "@mf-app-navbar": "http://localhost:9002/ld-mfe-app-navbar.js",
+        "@mf-demo/employees": "http://localhost:9003/LD-MFE-mfe-app-employees.js",
+        "@mfe-app-employee/details":"http://localhost:9004/main.js",
+        "@mfe-parcel-react":"http://localhost:9005/mfe-parcel-react.js",
+        "@mfe-utility": "http://localhost:9006/mfe-utility.js"
+      }
+    }

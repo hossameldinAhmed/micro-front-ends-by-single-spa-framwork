@@ -1,0 +1,39 @@
+<single-spa-router mode="hash">
+  <!--
+
+    This is the single-spa Layout Definition for your microfrontends.
+    See https://single-spa.js.org/docs/layout-definition/ for more information.
+
+  -->
+
+  <!-- Example layouts you might find helpful:
+
+  <nav>
+    <application name="@org/navbar"></application>
+  </nav>
+  <route path="settings">
+    <application name="@org/settings"></application>
+  </route>
+
+  -->
+  <nav id="mf-app-navbar">
+    <application name="@mf-app-navbar"></application>
+  </nav>
+
+  <main>
+    <route path="employees">
+      <application name="@mf-demo/employees"></application>
+    </route>
+    <route path="employee/:id">
+      <application name="@mfe-app-employee/details"></application>
+    </route>
+    <route path="home">
+      <application name="@mf-demo/home"></application>
+    </route>
+    <route default>
+      <application name="@mf-demo/home"></application>
+      <!-- <application name="@single-spa/welcome"></application> -->
+      <!-- <h3>Error Not Found</h3> -->
+    </route>
+  </main>
+</single-spa-router>
